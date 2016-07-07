@@ -1,0 +1,38 @@
+language: node_js
+
+node_js:
+  - 4.4.7
+  
+notifications:
+     email:
+         on_success: change
+         on_failure: always
+
+env:
+ global:
+  - secure: x7HiAOHahpAPzowcSLSLY4cW/8NEIBgs+H/Zn7MoSTAbf5A9pfxcAcYaS81VOmATj0EwNaQ6B6lzFqls+0NimwH+kueLHQOZ4wYVpSkRKbZxngy2dspy5YCa6rszSuDIPKxCddJZ/dnbo0XWlhYXEpdJRpg6eUSbjd7UrYrmr/eHKQEuO71ZPuNAhIcKcJ5gDWwhTMX9sG71n6hcGcCT0s/VGW0ck7DJLDkL4jqyVr91igtWFHF64nx/iwSOExon8G+4gADEE+AH3WzGL7CY0qXzfuDh5ocyJvByUiFQvj8YCK1cZ8jGOWXeofZdhVwM3yM20pG9oX4JFvB+2mzDww==
+
+build:
+    pre_ci_boot:
+        image_name: drydock/u14nod
+        image_tag: prod
+        pull: false
+
+    ci:
+        - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
+        - node --version
+    
+    on_success:
+        - git checkout $BRANCH 
+        - mkdir -p /tmp/dest
+        - git clone ssh://git@github.com/$REPO_NAME.git /tmp/dest --branch gh-pages
+        - cp -R public/* /tmp/dest
+        - cd /tmp/dest
+        - git config user.email build@iopa.io
+        - git config user.name iopa-build
+        - git config --global push.default matching
+        - git add . -A
+        - git remote set-url origin ssh://git@github.com/$REPO_NAME.git
+        - git commit -m "documentation generated via SHIPPABLE [ci skip] [skip ci]"
+        - git push origin gh-pages
+        - cd ~ && rm -rf /tmp/dest

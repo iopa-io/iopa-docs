@@ -1,0 +1,45 @@
+- name: appbuilder
+  description: IOPA built-in component for creating modular pipeline with app.use()
+  tags:
+    - official
+    - component
+    - core
+- name: commonkeys
+  description: Optional but commonly used IOPA keys not in the core specification
+  tags:
+    - official
+    - context
+- name: iopa
+  description: The Official IOPA Specification 1.4
+  tags:
+    - official
+    - core
+- name: nodekit
+  description: Extension used when embedded IOPA on desktop/web/mobile NodeKit applications
+  tags:
+    - thirdparty
+    - component
+    - nodekit
+    - context
+- name: opaque
+  description: IOPA middleware specification for upgrading a REST connection (e.g., websockets)
+  tags:
+    - official
+    - REST
+    - middleware
+    - context
+- name: rest
+  description: IOPA core specification for REST style requests / responses (e.g., HTTP, CoAP, MQTT)
+  tags:
+    - official
+    - component
+    - core
+    - context
+    - REST
+- name: websocket
+  description: IOPA middleware specification for WebSockets (e.g., WebSocket over HTTP)
+  tags:
+    - official
+    - REST
+    - middleware
+    - properties

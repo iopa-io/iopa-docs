@@ -1,0 +1,53 @@
+menu:
+  docs: Documentation
+  components: Components
+  news: News
+  middleware: Middleware
+  specs: Specifications
+  search: Search
+
+index:
+  get_started: Get started
+  get_started_docs: Documentation
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  docs:
+    getting_started: Getting Started
+    overview: Getting Started with IOPA
+    about: About IOPA
+    motivation: Motivation
+    related-concepts: Related Concepts
+    miscellaneous: Miscellaneous
+    free-and-open-source: Free and Open Source
+    target-audience: Tareget Audience
+  components:
+    core: Components
+    context: IOPA Context Record
+    appfunc: AppFunc Middleware
+    appbuilder: AppBuilder
+    servercapabilities: Server.Capabilities
+    middleware: Middleware and Servers
+    legacy: Interoperating with Legacy
+    readme-iopa-router: Application Router
+    readme-iopa-static: Static Server
+    readme-iopa-mount: Path Mounter
+  specs:
+    core: Specifications
+    iopa: IOPA 1.4
+    extensions: Extensions
+    appbuilder: AppBuilder
+    commonkeys: Common Keys
+    rest: REST Keys
+    opaque: Opaque Streams
+    websocket: WebSocket
+    thirdparty: Third Party
+    nodekit: NodeKit
+   

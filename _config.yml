@@ -1,0 +1,32 @@
+title: IOPA
+subtitle: "The Internet of Protocols Alliance"
+description: "IOPA is an API-first, Internet of Things (IoT) stack, open-sourced by the Internet of Protocols Alliance"
+author: Internet of Protocols Alliance
+language: en
+timezone: UTC
+url: https://iopa.io
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+theme: iopa-blue
+deploy:
+  type: git
+  repo: git@github.com:iopa-io/iopa-io.github.io.git
+
+disqus_shortname: iopa
+google_analytics: UA-TBD-10
+fb_admins: tbd
+algolia:
+  en:
+    api_key: aad27aa416b2ef8f02bf530f23234e2f
+    index_name: iopa
+twitter: iopa_io
+github: iopa-io/iopa

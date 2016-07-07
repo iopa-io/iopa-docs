@@ -1,0 +1,195 @@
+- name: iopa
+  description: API-first, Internet of Things (IoT) stack, open-sourced by the Internet of Protocols Alliance
+  link: https://github.com/iopa-io/iopa
+  tags:
+    - official
+    - core
+- name: iopa-coap
+  description: Lightweight Constrained Application Protocol (CoAP) protocol server for IOPA
+  link: https://github.com/iopa-io/iopa-coap
+  tags:
+    - official
+    - middleware
+    - server
+    - IOT
+- name: iopa-coap-packet
+  description: Constrained Application Protocol (CoAP) transport formatter for IOPA; used by iopa-coap
+  link: https://github.com/iopa-io/iopa-coap-packet
+  tags:
+    - official
+    - middleware
+    - server
+    - IOT
+- name: iopa-common-middleware
+  description: IOPA core middleware for building full-stack servers
+  link: https://github.com/iopa-io/iopa-common-middleware
+- name: iopa-common-stream
+  description: iopa-common-stream is a core utility library to create IOPA Body streams
+  link: https://github.com/iopa-io/iopa-common-stream
+  tags:
+    - official
+    - middleware
+    - core
+    - utility
+- name: iopa-connect
+  description: IOPA core middleware for connecting to legacy node http server and ExpressJS middleware
+  link: https://github.com/iopa-io/iopa-connect
+  tags:
+    - official
+    - middleware
+    - core
+    - node
+    - legacy
+- name: iopa-core
+  description: Full stack IOPA fabric in single 160Kb javascript including router, static file server, template engine w/ handlebars
+  link: https://github.com/iopa-io/iopa-core
+  tags:
+    - official
+    - middleware
+    - server
+    - core
+    - node
+    - legacy
+    - IOT
+- name: iopa-devices
+  description: API-first fabric for the Internet of Things (IoT)
+  link: https://github.com/iopa-io/iopa-devices
+  tags:
+    - official
+    - middleware
+    - IOT
+- name: iopa-discovery-upnp
+  description: Universal Plug-n-Play (UPNP) Discovery middleware for IOPA
+  link: https://github.com/iopa-io/iopa-discovery-upnp
+  tags:
+    - official
+    - middleware
+    - server
+    - IOT
+    - discovery
+- name: iopa-http
+  description: Hypertext Transfer Protocol (HTTP) transport for IOPA
+  link: https://github.com/iopa-io/iopa-http
+  tags:
+    - official
+    - middleware
+    - server
+    - IOT
+    - web
+- name: iopa-logger
+  description: IOPA middleware for tracing IOPA messages 
+  link: https://github.com/iopa-io/iopa-logger
+  tags:
+    - official
+    - middleware
+    - utility
+- name: iopa-mount
+  description: Mount other IOPA applications or middleware to a given pathname
+  link: https://github.com/iopa-io/iopa-mount
+  tags:
+    - official
+    - middleware
+    - utility
+    - core
+- name: iopa-mqtt
+  description: Message Queuing Telemetry Transport (MQTT) protocol server for IOPA
+  link: https://github.com/iopa-io/iopa-mqtt
+  tags:
+    - middleware
+    - MQTT
+    - IOT
+- name: iopa-mqtt-packet
+  description: Message Queuing Telemetry Transport (MQTT) packet formatter for IOPA; used by iopa-mqtt
+  link: https://github.com/iopa-io/iopa-mqtt-packet
+  tags:
+    - middleware
+    - MQTT
+- name: iopa-rest
+  description: ReST Extensions for core IOPA reference implementation; used by most IOPA components
+  link: https://github.com/iopa-io/iopa-rest
+  tags:
+    - middleware
+    - core
+    - official
+- name: iopa-router
+  description: Application routing middleware for IOPA; used by most IOPA applications
+  link: https://github.com/iopa-io/iopa-router
+  tags:
+    - middleware
+    - core
+    - official
+    - utility
+- name: iopa-sample-chat
+  description: Sample Application (Chat App) for IOPA framework and {NK} NodeKit 
+  link: https://github.com/iopa-io/iopa-sample-chat
+  tags:
+    - application
+    - official
+- name: iopa-docs
+  description: Official repository of the IOPA (Internet of Protocols Alliance) Specification
+  link: https://github.com/iopa-io/iopa-docs
+  tags:
+    - documentation
+    - official
+- name: iopa-ssdp
+  description: Simple Service Discovery Protocol (SSDP) for IOPA
+  link: https://github.com/iopa-io/iopa-ssdp
+  tags:
+    - middleware
+    - SSDP
+    - IOT
+    - server
+    - discovery
+    - official
+- name: iopa-static
+  description: IOPA middleware for serving static files
+  link: https://github.com/iopa-io/iopa-static
+  tags:
+    - middleware
+    - utility
+    - core
+    - web
+    - official
+- name: iopa-tcp
+  description: Transport Control Protocol (TCP) stack for IOPA; used by iopa-http, iopa-mqtt etc.
+  link: https://github.com/iopa-io/iopa-tcp
+  tags:
+    - middleware
+    - server
+    - official
+- name: iopa-template-handlebars
+  description: IOPA middleware for renderign Handlebars templates 
+  link: https://github.com/iopa-io/iopa-template-handlebars
+  tags:
+    - middleware
+    - templates
+    - official
+- name: iopa-template-razor
+  description: IOPA middleware for rendering Razor View Engine templates
+  link: https://github.com/iopa-io/iopa-template-razor
+  tags:
+    - middleware
+    - templates
+    - official
+- name: iopa-templates
+  description: Generic Template Engine for IOPA fabric for Handlebars, Mustache, Dust, Razor etc.
+  link: https://github.com/iopa-io/iopa-templates
+  tags:
+    - middleware
+    - templates
+    - official
+- name: iopa-test
+  description: Collection of test harnesses and stub server for testing IOPA middleware
+  link: https://github.com/iopa-io/iopa-test
+  tags:
+    - middleware
+    - utility
+    - official
+    - core
+- name: iopa-udp
+  description: User Datagram Protocol (UDP) for IOPA
+  link: https://github.com/iopa-io/iopa-udp
+  tags:
+    - middleware
+    - server
+    - official

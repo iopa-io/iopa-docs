@@ -1,0 +1,34 @@
+docs:
+  getting_started:
+    overview: index.html
+    about: about-iopa.html
+    motivation: motivation.html
+    related-concepts: related-concepts.html
+  miscellaneous:
+    free-and-open-source: free-and-open-source.html
+    target-audience: target-audience.html
+ 
+components:
+  core:
+    context: index.html
+    appfunc: appfunc.html
+    appbuilder: appbuilder.html
+    servercapabilities: servercapabilities.html
+  middleware:
+    legacy: legacy.html
+    readme-iopa-router: readme-iopa-router.html
+    readme-iopa-static: readme-iopa-static.html
+    readme-iopa-mount: readme-iopa-mount.html
+ 
+specs:
+  core:
+    iopa: iopa.html
+    appbuilder: appbuilder.html
+    commonkeys: commonkeys.html
+    rest: rest.html
+  extensions:
+    opaque: opaque.html
+    websocket: websocket.html
+  thirdparty:
+    nodekit: nodekit.html
+   
