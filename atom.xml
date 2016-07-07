@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>IOPA</title>
+  <subtitle>The Internet of Protocols Alliance</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://iopa.io/"/>
+  <updated>2016-07-07T03:42:59.000Z</updated>
+  <id>https://iopa.io/</id>
+  
+  <author>
+    <name>Internet of Protocols Alliance</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IOPA 1.4 Released</title>
+    <link href="https://iopa.io/news/2016/06/30/iopa-1-4-released/"/>
+    <id>https://iopa.io/news/2016/06/30/iopa-1-4-released/</id>
+    <published>2016-07-01T00:00:00.000Z</published>
+    <updated>2016-07-07T03:42:59.000Z</updated>
+    
+    <content type="html">&lt;p&gt;IOPA 1.4 is the current version of the Internet of Protocols Alliance specification.&lt;/p&gt;
+&lt;p&gt;It has been validated against HTTP, CoAP, MQTT, UPNP, SSDP, TCP, and UDP protocols.&lt;/p&gt;
+&lt;img src=&quot;/news/2016/06/30/iopa-1-4-released/iopa.jpg&quot; alt=&quot;iopa.jpg&quot; title=&quot;&quot;&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;IOPA 1.4 is the current version of the Internet of Protocols Alliance specification.&lt;/p&gt;
+&lt;p&gt;It has been validated against HTTP, CoAP, MQT
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>IOPA 1.1 Released</title>
+    <link href="https://iopa.io/news/2015/06/30/iopa-1-1-released/"/>
+    <id>https://iopa.io/news/2015/06/30/iopa-1-1-released/</id>
+    <published>2015-07-01T00:00:00.000Z</published>
+    <updated>2016-07-07T03:42:59.000Z</updated>
+    
+    <content type="html">&lt;p&gt;IOPA 1.1 is the fist stable version of the Internet of Protocols Alliance specification.&lt;/p&gt;
+&lt;p&gt;It has been validated against HTTP, TCP, and UDP protocols.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;IOPA 1.1 is the fist stable version of the Internet of Protocols Alliance specification.&lt;/p&gt;
+&lt;p&gt;It has been validated against HTTP, TCP, 
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

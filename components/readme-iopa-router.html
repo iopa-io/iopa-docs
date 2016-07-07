@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>IOPA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://iopa.io/components/readme-iopa-router.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://iopa.io/components/readme-iopa-router.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/iopa-blue-7615250ef9.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="IOPA">
+  <!-- Open Graph -->
+  <meta name="description" content="iopa-router 
+
+Aboutiopa-router is lightweight router for the IOPA framework
+It routes HTTP, COAP and MQTT requests, with simple uri templates and parameter/query string parsing.  
+UsageInstallation:n">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IOPA">
+<meta property="og:url" content="https://iopa.io/components/readme-iopa-router.html">
+<meta property="og:site_name" content="IOPA">
+<meta property="og:description" content="iopa-router 
+
+Aboutiopa-router is lightweight router for the IOPA framework
+It routes HTTP, COAP and MQTT requests, with simple uri templates and parameter/query string parsing.  
+UsageInstallation:n">
+<meta property="og:image" content="http://iopa.io/iopa.png">
+<meta property="og:image" content="https://api.shippable.com/projects/56e2594e9d043da07bb7cc63/badge?branchName=master">
+<meta property="og:image" content="https://img.shields.io/badge/iopa-middleware-c24f8c.svg?style=flat-square">
+<meta property="og:image" content="https://nodei.co/npm/iopa-router.png?downloads=true">
+<meta property="og:updated_time" content="2016-07-07T03:42:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IOPA">
+<meta name="twitter:description" content="iopa-router 
+
+Aboutiopa-router is lightweight router for the IOPA framework
+It routes HTTP, COAP and MQTT requests, with simple uri templates and parameter/query string parsing.  
+UsageInstallation:n">
+<meta name="twitter:image" content="http://iopa.io/iopa.png">
+<meta name="twitter:site" content="iopa_io">
+<meta property="fb:admins" content="tbd">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-TBD-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">IOPA</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs/" class="main-nav-link">Documentation</a><a href="/components/" class="main-nav-link">Components</a><a href="/news/" class="main-nav-link">News</a><a href="/middleware/" class="main-nav-link">Middleware</a><a href="/specs/" class="main-nav-link">Specifications</a>
+      <a href="https://github.com/iopa-io/iopa" class="main-nav-link"><i class="fa fa-github"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="components/readme-iopa-router.html">
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="https://github.com/iopa-io/iopa-docs/edit/master/source/components/readme-iopa-router.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="iopa-router" class="article-heading"><a href="#iopa-router" class="headerlink" title=" iopa-router"></a><a href="http://iopa.io"><img src="http://iopa.io/iopa.png" alt="IOPA"></a><br> iopa-router<a class="article-anchor" href="#iopa-router" aria-hidden="true"></a></h1><p><a href="https://app.shippable.com/projects/56e2594e9d043da07bb7cc63" target="_blank" rel="external"><img src="https://api.shippable.com/projects/56e2594e9d043da07bb7cc63/badge?branchName=master" alt="Build Status"></a> <a href="http://iopa.io"><img src="https://img.shields.io/badge/iopa-middleware-c24f8c.svg?style=flat-square" alt="IOPA"></a></p>
+<p><a href="https://nodei.co/npm/iopa-router/" target="_blank" rel="external"><img src="https://nodei.co/npm/iopa-router.png?downloads=true" alt="NPM"></a></p>
+<h2 id="About" class="article-heading"><a href="#About" class="headerlink" title="About"></a>About<a class="article-anchor" href="#About" aria-hidden="true"></a></h2><p><code>iopa-router</code> is lightweight router for the IOPA framework</p>
+<p>It routes HTTP, COAP and MQTT requests, with simple uri templates and parameter/query string parsing.  </p>
+<h2 id="Usage" class="article-heading"><a href="#Usage" class="headerlink" title="Usage"></a>Usage<a class="article-anchor" href="#Usage" aria-hidden="true"></a></h2><h3 id="Installation" class="article-heading"><a href="#Installation" class="headerlink" title="Installation:"></a>Installation:<a class="article-anchor" href="#Installation" aria-hidden="true"></a></h3><pre><code>npm install iopa-router
+</code></pre><h3 id="Hello-World" class="article-heading"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World<a class="article-anchor" href="#Hello-World" aria-hidden="true"></a></h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">const</span> Router = <span class="built_in">require</span>(<span class="string">'iopa-router'</span>),</div><div class="line">    iopa = <span class="built_in">require</span>(<span class="string">'iopa'</span>),</div><div class="line">    http = <span class="built_in">require</span>(<span class="string">'http'</span>),</div><div class="line">    iopaConnect = <span class="built_in">require</span>(<span class="string">'iopa-connect'</span>)</div><div class="line"></div><div class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> iopa.App();</div><div class="line"></div><div class="line">app.use(Router);</div><div class="line"></div><div class="line">app.get(<span class="string">'/hello'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">context, done</span>)</span>&#123;</div><div class="line">          context.response[<span class="string">"iopa.Body"</span>].end(<span class="string">"&lt;HTML&gt;&lt;HEAD&gt;&lt;/HEAD&gt;&lt;BODY&gt;Hello World&lt;/BODY&gt;"</span>);</div><div class="line">          <span class="keyword">return</span> done();</div><div class="line">          &#125;);</div><div class="line">          </div><div class="line"> app.get(<span class="string">'/goodbye'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">context, done</span>)</span>&#123;</div><div class="line">          context.response[<span class="string">"iopa.Body"</span>].end(<span class="string">"&lt;HTML&gt;&lt;HEAD&gt;&lt;/HEAD&gt;&lt;BODY&gt;Goodbye World&lt;/BODY&gt;"</span>);</div><div class="line">          <span class="keyword">return</span> done();</div><div class="line">          &#125;);</div><div class="line"></div><div class="line">http.createServer(app.buildHttp()).listen(<span class="number">3000</span>);</div><div class="line"><span class="string">``</span><span class="string">` </span></div><div class="line"></div><div class="line">## Methods</div><div class="line"></div><div class="line">* `route.get<span class="string">`:  Match `</span>GET<span class="string">` requests</span></div><div class="line">* `route.post<span class="string">`: Match `</span>POST<span class="string">` requests</span></div><div class="line">* `route.put<span class="string">`:  Match `</span>PUT<span class="string">` requests</span></div><div class="line">* `route.head<span class="string">`: Match `</span>HEAD<span class="string">` requests </span></div><div class="line">* `route.del<span class="string">`:  Match `</span>DELETE<span class="string">` requests</span></div><div class="line">* `route.options<span class="string">`:  Match `</span>OPTIONS<span class="string">` requests</span></div><div class="line">* `route.all<span class="string">`:  Match all above request methods.</span></div><div class="line">* `route.debugget<span class="string">`:  Match `</span>GET<span class="string">` for `</span>scheme=<span class="string">'debug'</span><span class="string">` requests</span></div><div class="line">	</div><div class="line">## API</div><div class="line"></div><div class="line"></div><div class="line">If you want to grab a part of the path you can use capture groups in the pattern:</div><div class="line"></div><div class="line">`<span class="string">``</span> js</div><div class="line">route.get(<span class="string">'/id/&#123;customer&#125;'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> base = <span class="keyword">this</span>.Params.base; <span class="comment">// ex: if the path is /id/bar, then customer = bar</span></div></pre></td></tr></table></figure>
+<p>Query paramaters in the url are also added to <code>owin.Params</code>:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="string">'/id/&#123;customer&#125;'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> base = <span class="keyword">this</span>.Params.base; <span class="comment">// ex: if the path is /id/bar?name=dog, then customer = bar</span></div><div class="line">	<span class="keyword">var</span> name = <span class="keyword">this</span>.Params.name; <span class="comment">// ex: if the path is /id/bar?name=dog, then name = dog</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>The capture patterns matches until the next <code>/</code> or character present after the group</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="string">'/&#123;x&#125;x&#123;y&#125;'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// if the path was /200x200, then his.Params = &#123;x:'200', y:'200'&#125;</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Optional patterns are supported by adding a <code>?</code> at the end</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="string">'/&#123;prefix&#125;?/&#123;top&#125;'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// matches both '/a/b' and '/b'</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>If you want to just match everything you can use a wildcard <code>*</code> which works like posix wildcards</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="string">'/&#123;prefix&#125;/*'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// matches both '/a/', '/a/b', 'a/b/c' and so on.</span></div><div class="line">	<span class="comment">// the value of the wildcard is available through req.params.wildcard</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>If the standard capture groups aren’t expressive enough for you can specify an optional inline regex </p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="string">'/&#123;digits&#125;([0-9]+)'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// matches both '/24' and '/424' but not '/abefest' and so on.</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>You can also use regular expressions and the related capture groups instead:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">route.get(<span class="regexp">/^\/foo\/(\w+)/</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> group = req.params[<span class="number">1</span>]; <span class="comment">// if path is /foo/bar, then group is bar</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Error-handling" class="article-heading"><a href="#Error-handling" class="headerlink" title="Error handling"></a>Error handling<a class="article-anchor" href="#Error-handling" aria-hidden="true"></a></h2><p>By default iopa-router will simply move to next iopa middleware function if no route matched.<br>The router is a Promise/A compatible async function that respects error bubbling, but has no specific handling built in.</p>
+<p>You can provide a catch-all to a given route that is called if no route was matched:</p>
+<pre><code>route.get(function(context) {
+// called if no other get route matched
+context.response.writeHead(404);
+context.response.end(&apos;no GET handler found&apos;);
+});
+</code></pre><h2 id="Credits" class="article-heading"><a href="#Credits" class="headerlink" title="Credits"></a>Credits<a class="article-anchor" href="#Credits" aria-hidden="true"></a></h2><p>This router was ported from <a href="https://github.com/gett/router" target="_blank" rel="external">gett/router</a> which was developed under MIT license by Mathias Buus Madsen and Ian Jorgensen.</p>
+<p>It has been developed to be a core component of the IOPA ecosystem.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-07-07T03:42:59.000Z" itemprop="dateModified">Last updated: 2016-07-07</time>
+                <a href="legacy.html" class="article-footer-prev" title="Interoperating with Legacy"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="readme-iopa-static.html" class="article-footer-next" title="Static Server"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'iopa';
+  var disqus_url = 'https://iopa.io/components/readme-iopa-router.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#iopa-router"><span class="toc-text"> iopa-router</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#About"><span class="toc-text">About</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-text">Usage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installation"><span class="toc-text">Installation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hello-World"><span class="toc-text">Hello World</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Error-handling"><span class="toc-text">Error handling</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Credits"><span class="toc-text">Credits</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Components</strong><a href="index.html" class="sidebar-link">IOPA Context Record</a><a href="appfunc.html" class="sidebar-link">AppFunc Middleware</a><a href="appbuilder.html" class="sidebar-link">AppBuilder</a><a href="servercapabilities.html" class="sidebar-link">Server.Capabilities</a><strong class="sidebar-title">Middleware and Servers</strong><a href="legacy.html" class="sidebar-link">Interoperating with Legacy</a><a href="readme-iopa-router.html" class="sidebar-link current">Application Router</a><a href="readme-iopa-static.html" class="sidebar-link">Static Server</a><a href="readme-iopa-mount.html" class="sidebar-link">Path Mounter</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2016 <a href="https://iopa.io/" target="_blank">Internet of Protocols Alliance</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/iopa_io" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/iopa-io/iopa" class="footer-link" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs/" class="mobile-nav-link">Documentation</a><a href="/components/" class="mobile-nav-link">Components</a><a href="/news/" class="mobile-nav-link">News</a><a href="/middleware/" class="mobile-nav-link">Middleware</a><a href="/specs/" class="mobile-nav-link">Specifications</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/iopa-io/iopa" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Components</strong><a href="index.html" class="mobile-nav-link">IOPA Context Record</a><a href="appfunc.html" class="mobile-nav-link">AppFunc Middleware</a><a href="appbuilder.html" class="mobile-nav-link">AppBuilder</a><a href="servercapabilities.html" class="mobile-nav-link">Server.Capabilities</a><strong class="mobile-nav-title">Middleware and Servers</strong><a href="legacy.html" class="mobile-nav-link">Interoperating with Legacy</a><a href="readme-iopa-router.html" class="mobile-nav-link current">Application Router</a><a href="readme-iopa-static.html" class="mobile-nav-link">Static Server</a><a href="readme-iopa-mount.html" class="mobile-nav-link">Path Mounter</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="components/readme-iopa-router.html">
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'aad27aa416b2ef8f02bf530f23234e2f',
+  indexName: 'iopa',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>

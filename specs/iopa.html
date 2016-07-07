@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>IOPA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://iopa.io/specs/iopa.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://iopa.io/specs/iopa.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/iopa-blue-7615250ef9.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="IOPA">
+  <!-- Open Graph -->
+  <meta name="description" content="IOPA Core Specification 1.4
+Author : Internet of Protocols Alliance 
+Copyright : 2016 Internet of Protocols Alliance (IOPA) 
+License : Creative Commons Attribution ShareAlike 4.0 International
+Versio">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IOPA">
+<meta property="og:url" content="https://iopa.io/specs/iopa.html">
+<meta property="og:site_name" content="IOPA">
+<meta property="og:description" content="IOPA Core Specification 1.4
+Author : Internet of Protocols Alliance 
+Copyright : 2016 Internet of Protocols Alliance (IOPA) 
+License : Creative Commons Attribution ShareAlike 4.0 International
+Versio">
+<meta property="og:image" content="https://iopa.io/./iopa.png">
+<meta property="og:updated_time" content="2016-07-07T03:42:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IOPA">
+<meta name="twitter:description" content="IOPA Core Specification 1.4
+Author : Internet of Protocols Alliance 
+Copyright : 2016 Internet of Protocols Alliance (IOPA) 
+License : Creative Commons Attribution ShareAlike 4.0 International
+Versio">
+<meta name="twitter:image" content="https://iopa.io/./iopa.png">
+<meta name="twitter:site" content="iopa_io">
+<meta property="fb:admins" content="tbd">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-TBD-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">IOPA</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs/" class="main-nav-link">Documentation</a><a href="/components/" class="main-nav-link">Components</a><a href="/news/" class="main-nav-link">News</a><a href="/middleware/" class="main-nav-link">Middleware</a><a href="/specs/" class="main-nav-link">Specifications</a>
+      <a href="https://github.com/iopa-io/iopa" class="main-nav-link"><i class="fa fa-github"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="">
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="https://github.com/iopa-io/iopa-docs/edit/master/source/specs/iopa.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p><a href="http://iopa.io"><img src="./iopa.png" alt="IOPA"></a></p>
+<h1 id="IOPA-Core-Specification-1-4" class="article-heading"><a href="#IOPA-Core-Specification-1-4" class="headerlink" title="IOPA Core Specification 1.4"></a>IOPA Core Specification 1.4<a class="article-anchor" href="#IOPA-Core-Specification-1-4" aria-hidden="true"></a></h1><ul>
+<li>Author : Internet of Protocols Alliance </li>
+<li>Copyright : 2016 Internet of Protocols Alliance (IOPA) </li>
+<li>License : <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="external">Creative Commons Attribution ShareAlike 4.0 International</a></li>
+<li>Version : 1.4</li>
+</ul>
+<h2 id="Contents" class="article-heading"><a href="#Contents" class="headerlink" title="Contents"></a>Contents<a class="article-anchor" href="#Contents" aria-hidden="true"></a></h2><p>1. <a href="#Overview">Overview</a></p>
+<p>2. <a href="#2-definitions">Definitions</a></p>
+<p>3. <a href="#3-request-execution">Request Execution</a></p>
+<p>3.1. <a href="#31-application-delegate">Application Delegate</a></p>
+<p>3.2. <a href="#32-environment">Environment</a></p>
+<p>3.3. <a href="#33-headers">Headers</a></p>
+<p>3.4. <a href="#34-request-body-100-continue-and-completed-semantics">Request Body</a></p>
+<p>3.5. <a href="#35-response-body">Response Body</a></p>
+<p>3.6. <a href="#36-request-lifetime">Request Lifetime</a></p>
+<p>4. <a href="#4-application-startup">Application Startup</a></p>
+<p>5. <a href="#5-uri-reconstruction">URI Reconstruction</a></p>
+<p>5.1. <a href="#51-uri-scheme">URI Scheme</a></p>
+<p>5.2. <a href="#52-hostname">Hostname</a></p>
+<p>5.3. <a href="#53-paths">Paths</a></p>
+<p>5.4. <a href="#54-uri-reconstruction-algorithm">URI Reconstruction Algorithm</a></p>
+<p>5.5. <a href="#55-percent-encoding">Percent-encoding</a></p>
+<p>6. <a href="#6-error-handling">Error Handling</a></p>
+<p>6.1. <a href="#61-application-errors">Application Errors</a></p>
+<p>6.2. <a href="#62-server-errors">Server Errors</a></p>
+<p>7. <a href="#7-versioning">Versioning</a></p>
+<p>8. <a href="#8-extensions">Extensions</a></p>
+<p>9. <a href="#9-real-world-usage">Real World Usage</a></p>
+<h2 id="1-Overview" class="article-heading"><a href="#1-Overview" class="headerlink" title="1. Overview"></a>1. Overview<a class="article-anchor" href="#1-Overview" aria-hidden="true"></a></h2><p>This document defines the Open Web Interface for Node.js (IOPA), a standard framework for REST servers for io.js, Node.js and backwards compatible with .NET.  </p>
+<p>IOPA is targeted for multiple transport providers including HTTP, COAP and MQTT servers, and can be a drop-in replacement for existing frameworks such as Connect/Express on Node.js.   It defines a standard way that application/device logic can rely on REST server capabilities without being tied to any one transport (http, express, koa, node-coap, mosca, etc.) </p>
+<p>IOPA is defined in terms of a delegate structure. There is no assembly. Implementing either the host or application side the IOPA spec does not introduce a dependency to a project.</p>
+<p>In this document, the Node.js <code>function</code> and C# <code>Action</code>/<code>Func</code> syntax is used to notate some delegate structures.   However, the delegate structure could be equivalently represented with other native functions, CLR interfaces, or named delegates. This is by design; when implementing IOPA, choose a delegate representation that works for you and your stack.</p>
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a href="http://www.ietf.org/rfc/rfc2119.txt" target="_blank" rel="external">RFC 2119</a>.</p>
+<h2 id="2-Definitions" class="article-heading"><a href="#2-Definitions" class="headerlink" title="2. Definitions"></a>2. Definitions<a class="article-anchor" href="#2-Definitions" aria-hidden="true"></a></h2><p>This document refers to the following software actors:</p>
+<ul>
+<li><p>Server – The REST server (typically HTTP, COAP or MQTT) that directly communicates with the client and then uses IOPA semantics to process requests. Servers may require an adapter layer that converts to IOPA semantics.</p>
+</li>
+<li><p>Framework – A self-contained component based on IOPA exposing its own object model or API that applications may use to facilitate request processing. Frameworks may require an adapter layer that converts from IOPA semantics.</p>
+</li>
+<li><p>Application – A specific application or device logic, possibly built on top of a Web Framework, which is run using IOPA compatible Servers.</p>
+</li>
+<li><p>Middleware – Pass through components that form a pipeline between a server and application to inspect, route, or modify request and response messages for a specific purpose.</p>
+</li>
+<li><p>Host – The process an application and server execute inside of, primarily responsible for application startup. Some Servers are also Hosts.</p>
+</li>
+</ul>
+<h2 id="3-Request-Execution" class="article-heading"><a href="#3-Request-Execution" class="headerlink" title="3. Request Execution"></a>3. Request Execution<a class="article-anchor" href="#3-Request-Execution" aria-hidden="true"></a></h2><p>Broadly speaking, a server invokes an application (providing as arguments an environment dictionary with request and response headers and bodies); an application either populates a response or indicates an error.</p>
+<h3 id="3-1-Application-Delegate" class="article-heading"><a href="#3-1-Application-Delegate" class="headerlink" title="3.1. Application Delegate"></a>3.1. Application Delegate<a class="article-anchor" href="#3-1-Application-Delegate" aria-hidden="true"></a></h3><p>The primary interface in IOPA is called the <em>application delegate</em> or <em>AppFunc</em>. An application delegate takes the Dictionary environment and returns a Promise or a Task when it has finished processing.</p>
+<h4 id="Node-js-AppFunc-returns-a-Promise-A" class="article-heading"><a href="#Node-js-AppFunc-returns-a-Promise-A" class="headerlink" title="Node.js AppFunc (returns a Promise/A)"></a>Node.js AppFunc (returns a Promise/A)<a class="article-anchor" href="#Node-js-AppFunc-returns-a-Promise-A" aria-hidden="true"></a></h4><pre><code>var myAppFuncPromise = function() {...};
+</code></pre><p>where <code>this</code> is set to the Dictionary environment and <code>myAppFuncPromise</code> is a Promise/A promise that can be chained with     <code>myAppFuncPromise.then(... , ... )</code> etc.</p>
+<h4 id="NET" class="article-heading"><a href="#NET" class="headerlink" title=".NET"></a>.NET<a class="article-anchor" href="#NET" aria-hidden="true"></a></h4><pre><code>using AppFunc = Func&lt;
+    IDictionary&lt;string, object&gt;, // Environment
+    Task&gt;; // Done
+</code></pre><blockquote>
+<p>The application MUST eventually complete the returned <em>task/promise</em>, or throw an exception.</p>
+</blockquote>
+<h3 id="3-2-Environment" class="article-heading"><a href="#3-2-Environment" class="headerlink" title="3.2. Environment"></a>3.2. Environment<a class="article-anchor" href="#3-2-Environment" aria-hidden="true"></a></h3><p>The Environment object stores information about the request, the response, and any relevant server state.  The server is responsible for providing body streams and header collections for both the request and response in the initial call. The application then populates the appropriate fields with response data, writes the response body, and returns when done.</p>
+<ul>
+<li><p>The environment object MUST be non-null, mutable and MUST contain the keys listed as required in the tables below (listed under <strong>IOPA Key Name</strong> column title)</p>
+</li>
+<li><p>Keys MUST be compared using StringComparer.Ordinal.</p>
+</li>
+<li><p>The values associated with the keys MUST be non-null, unless otherwise specified.</p>
+</li>
+<li><p>The implementation MAY provide aliases that are convenient to access in the selected programming language chosen (i.e., ECMAScript/JavaScript, C#) to avoid <code>context[&quot;iopa.Key&quot;]</code> type accessors in favor of <code>this.owinKey</code> (for intellitype, strong typing, capitalization conventions, separation of <code>request</code> and <code>response</code> objects, etc.).  </p>
+</li>
+<li><p>If a server does not implement alias names, middleware such as <a href="http://github.com/iopa/iopa" target="_blank" rel="external">IOPA/iopa</a> MAY be used to add such alias names.  </p>
+</li>
+<li><p>Alias names used by the OwinJS/owinjs reference implementation and indicated in the table below, are RECOMMENDED as the preferred naming convention.  Additional aliases or helper functions MAY be provided in addition to these.</p>
+</li>
+<li><p>Where provided, alias property getters and setters MUST ensure continued synchronization with the original environment dictionary property (i.e., these are reference <em>mirrors</em> not value <em>copies</em>).  </p>
+</li>
+<li><p>Periods in <strong>IOPA Key Names</strong> are considered part of the single string and therefore require quotes for access in most C-style languages (e.g., <code>var body = context[&quot;iopa.RequestBody&quot;];</code>).</p>
+</li>
+<li><p>Periods in <strong>alias names</strong> indicate separate layers in the object hierarchy (e.g., <code>context</code> object contains a <code>request</code> alias property which contains a <code>body</code> property, a <code>path</code> string, a <code>pathBase</code> string etc.).  All aliases key names SHOULD be in <em>camelCase</em> capitalization.   (e.g., <code>var body = this.request.body;</code>)</p>
+</li>
+<li><p>Implementations of IOPA servers and/or middleware harnesses MAY omit the context variable as an explicit parameter for applications and middleware functions and instead set the base language’s context object (e.g., <code>this</code> in ECMAScript/Javascript).</p>
+</li>
+<li><p>The environment dictionary SHOULD allow additional prototype methods to be added to its prototype object, to facilitate alias implementations that are defined once per server instance, not once per request</p>
+</li>
+</ul>
+<h3 id="3-2-1-Request-Data" class="article-heading"><a href="#3-2-1-Request-Data" class="headerlink" title="3.2.1 Request Data"></a>3.2.1 Request Data<a class="article-anchor" href="#3-2-1-Request-Data" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Required</th>
+<th>IOPA Key Name</th>
+<th>Recommended Aliases</th>
+<th>Value Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestBody”</td>
+<td>this.request.body<br>this.request</td>
+<td>A Stream/BufferList with the request payload, if any Stream.  Null MAY be used as a placeholder if there is no request body. See <a href="#34-request-body-100-continue-and-completed-semantics">Request Body</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestHeaders”</td>
+<td>this.request.headers</td>
+<td>A Dictionary of request headers/options. See <a href="#33-headers">Headers</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestMethod”</td>
+<td>this.request.method</td>
+<td>A <code>string</code> containing the request method of the request (e.g., <code>&quot;GET&quot;</code>, <code>&quot;PUT&quot;</code>, <code>&quot;DELETE&quot;</code>, <code>&quot;POST&quot;</code>, <code>&quot;CONNECT&quot;</code>, <code>&quot;SUBSCRIBE&quot;</code>).</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestPath”</td>
+<td>this.request.path</td>
+<td>A <code>string</code> containing the request path. The path MUST be relative to the “root” of the application delegate; see <a href="#53-paths">Paths</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestPathBase”</td>
+<td>this.request.pathBase</td>
+<td>A <code>string</code> containing the portion of the request path corresponding to the “root” of the application delegate; see <a href="#53-paths">Paths</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestProtocol”</td>
+<td>this.request.protocol</td>
+<td>A <code>string</code> containing the protocol name and version (e.g. <code>&quot;COAP/1.0&quot;</code>, <code>&quot;HTTP/1.1&quot;</code>, or <code>&quot;MQTT/3.1.1&quot;</code>).</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestQueryString”</td>
+<td>this.request.queryString</td>
+<td>A <code>string</code> containing the query string component of the request URI, without the leading “?” (e.g., <code>&quot;foo=bar&amp;amp;baz=quux&quot;</code>). The value may be an empty string.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.RequestScheme”</td>
+<td>this.request.scheme</td>
+<td>A <code>string</code> containing the URI scheme used for the request (e.g., <code>&quot;http&quot;</code>, <code>&quot;coap&quot;</code>, <code>&quot;https&quot;</code>, <code>&quot;mqtt&quot;</code>); see <a href="#51-uri-scheme">URI Scheme</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-2-2-Response-Data" class="article-heading"><a href="#3-2-2-Response-Data" class="headerlink" title="3.2.2 Response Data"></a>3.2.2 Response Data<a class="article-anchor" href="#3-2-2-Response-Data" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Required</th>
+<th>IOPA Key Name</th>
+<th>Recommended Aliases</th>
+<th>Value Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.ResponseBody”</td>
+<td>this.response.body<br>this.response</td>
+<td>A Stream/BufferList used to write/append the response payload, if any. See <a href="#35-response-body">Response Body</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.ResponseHeaders”</td>
+<td>this.response.headers</td>
+<td>A Dictionary of response headers/options. See <a href="#33-headers">Headers</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.ResponseStatusCode”</td>
+<td>this.response.statusCode</td>
+<td>An optional <code>integer</code> containing the REST response status code as defined by the transport protocol (COAP, HTTP or MQTT).</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.ResponseReasonPhrase”</td>
+<td>this.response.reasonPhrase</td>
+<td>An optional <code>string</code> containing the reason phrase associated the given status code. If none is provided then the server SHOULD provide a default as described in <a href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank" rel="external">RFC 2616</a> section 6.1.1</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.ResponseProtocol”</td>
+<td>this.response.protocol</td>
+<td>An optional <code>string</code> containing the protocol name and version (e.g. <code>&quot;COAP/1.0&quot;</code>, <code>&quot;HTTP/1.1&quot;</code>, or <code>&quot;MQTT/3.1.1&quot;</code>). If none is provided then the “iopa.RequestProtocol” key’s value is the default.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-2-3-Other-Data" class="article-heading"><a href="#3-2-3-Other-Data" class="headerlink" title="3.2.3 Other Data"></a>3.2.3 Other Data<a class="article-anchor" href="#3-2-3-Other-Data" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Required</th>
+<th>IOPA Key Name</th>
+<th>Recommended Aliases</th>
+<th>Value Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.CallCancelled”</td>
+<td>this.iopa.callCancelled</td>
+<td>A CancellationToken indicating if the request has been cancelled/aborted. See <a href="#5-uri-reconstruction">Request Lifetime</a>.</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.Version”</td>
+<td>this.iopa.version</td>
+<td>The string <code>&quot;1.2&quot;</code> indicating IOPA version. See <a href="#7-versioning">Versioning</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-2-4-Common-Keys" class="article-heading"><a href="#3-2-4-Common-Keys" class="headerlink" title="3.2.4 Common Keys"></a>3.2.4 Common Keys<a class="article-anchor" href="#3-2-4-Common-Keys" aria-hidden="true"></a></h3><p>In addition to the keys above the host, server, middleware, application, etc. may add arbitrary data associated with the request or response to the environment dictionary.  Guidelines for additional keys and a list of commonly defined keys can be found in <a href="./CommonKeys.md">CommonKeys</a>.</p>
+<h3 id="3-3-Headers" class="article-heading"><a href="#3-3-Headers" class="headerlink" title="3.3. Headers"></a>3.3. Headers<a class="article-anchor" href="#3-3-Headers" aria-hidden="true"></a></h3><p>The headers/options of the HTTP/COAP/MQTT request and response messages are represented by objects of type <code>IDictionary</code> (C#) / object <code>{&quot;key&quot; : &quot;value&quot;}</code> (ECMAScript). The requirements below are predicated on <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2" target="_blank" rel="external">RFC 2616 section 4.2</a>.</p>
+<ul>
+<li>The dictionary MUST be mutable.</li>
+<li>Keys MUST be HTTP/COAP/MQTT field-names without <code>&#39;:&#39;</code> or whitespace.</li>
+<li>Keys MUST be compared using OrdinalIgnoreCase.</li>
+<li>All characters in key and value strings SHOULD be within the ASCII codepage.</li>
+<li>The value array returned is assumed to be a copy of the data. Any intended changes to the value array MUST be persisted back to the headers dictionary manually by via headers[headerName] = modifiedArray; or headers.Remove(header).</li>
+<li>Header values are assumed to be in a mixed format, meaning that a normally comma separated header may appear as a single entry in the values array, one entry per value, or a mixture of the two.</li>
+<li>Servers, applications, and intermediaries SHOULD NOT split or merge header values unnecessarily. While the three formats are supposed to be interchangeable, in practice many existing implementations only support one specific format. Developers should have the flexibility to support existing implementations by producing or consuming a selected format without interference.</li>
+</ul>
+<h3 id="3-4-Request-body-100-Continue-and-Completed-Semantics" class="article-heading"><a href="#3-4-Request-body-100-Continue-and-Completed-Semantics" class="headerlink" title="3.4. Request body, 100 Continue, and Completed Semantics"></a>3.4. Request body, 100 Continue, and Completed Semantics<a class="article-anchor" href="#3-4-Request-body-100-Continue-and-Completed-Semantics" aria-hidden="true"></a></h3><p>If the request indicates there is an associated body the server SHOULD provide a Stream/BufferList in the <code>iopa.RequestBody</code> key to access the body data. Stream.Null MAY be used as a placeholder if there is no request body data expected. If the request Expect header indicates the client requests a 100 Continue, it is up to the server to provide iopa. The application MUST NOT set “iopa.ResponseStatusCode” to 100. 100 Continue is only an intermediate response and using it would prevent the application from providing a final response (e.g. 200 OK). </p>
+<ul>
+<li>The application delegate SHOULD NOT complete its returned Task and return control to the server until it is finished with the request body. Once the AppFunc Task is complete the application SHOULD NOT continue to read from the request stream.</li>
+<li>The application MUST signal completion or failure of the response body by completing its returned Task or throwing an exception. After completing the Task, the application SHOULD NOT write any further data to the stream.</li>
+<li>If the server signals the “iopa.CallCancelled” CancellationToken during the execution of the application delegate, the application SHOULD NOT attempt further reads from the stream, and SHOULD promptly complete the application delegate Task.</li>
+<li>The application SHOULD NOT close or dispose the given stream unless it has completely consumed the request body. The stream owner (e.g. the server or middleware) MUST do any necessary cleanup once the application delegate’s Task completes.</li>
+<li>Any exceptions thrown from the request body stream are fatal and SHOULD be returned to the server by being thrown synchronously from the AppFunc or by failing the asynchronous Task with the given exception(s).</li>
+</ul>
+<h3 id="3-5-Response-Body" class="article-heading"><a href="#3-5-Response-Body" class="headerlink" title="3.5. Response Body"></a>3.5. Response Body<a class="article-anchor" href="#3-5-Response-Body" aria-hidden="true"></a></h3><p>The server provides a response body Stream with the <code>iopa.ResponseBody</code> key in the initial environment dictionary. The headers, status code, reason phrase, etc., can be modified up until the first write to the response body stream. Upon first write, the server validates and sends the headers.Applications MAY choose to buffer response data to delay the header finalization.</p>
+<ul>
+<li>The application MUST signal completion or failure of the body by completing its returned Task or throwing an exception. After completing the Task, the application SHOULD NOT write any further data to the stream.</li>
+<li>If the server signals the <code>iopa.CallCancelled</code> CancellationToken during the execution of the application delegate, the application SHOULD NOT attempt further writes to the stream, and SHOULD promptly complete the application delegate Task.</li>
+<li>The application SHOULD NOT close or dispose the given stream as middleware may append additional data. The stream owner (e.g. the server or middleware) MUST perform any necessary cleanup once the application delegate’s Task completes.</li>
+</ul>
+<blockquote>
+<p>An application SHOULD NOT assume the given stream supports multiple outstanding asynchronous writes. The application developer SHOULD verify that the server and all middleware in use support this pattern before attempting to use it.</p>
+</blockquote>
+<h3 id="3-6-Request-lifetime" class="article-heading"><a href="#3-6-Request-lifetime" class="headerlink" title="3.6. Request lifetime"></a>3.6. Request lifetime<a class="article-anchor" href="#3-6-Request-lifetime" aria-hidden="true"></a></h3><p>The full scope or lifetime of a request is limited by the several factors, including the client, server, and application delegate. In the simplest scenario a request’s lifetime ends when the application delegate has completed and the server gracefully ends the request. Failures at any level may cause the request to terminate prematurely, or may be handled internally and allow the request to continue.</p>
+<p>The <code>&quot;iopa.CallCancelled&quot;</code> key is associated with a CancellationToken that the server uses to signal if the request has be aborted. This SHOULD be triggered if the request becomes faulted before the AppFunc Task is completed. It MAY be triggered at any point at the providers discretion. Middleware MAY replace this token with their own to provide added granularity or functionality, but they SHOULD chain their new token with the one originally provided to them.</p>
+<h2 id="4-Application-Startup" class="article-heading"><a href="#4-Application-Startup" class="headerlink" title="4. Application Startup"></a>4. Application Startup<a class="article-anchor" href="#4-Application-Startup" aria-hidden="true"></a></h2><p>When the host process starts there are a number of steps it goes through to set up the application.</p>
+<ol>
+<li><p>The host creates a Properties Dictionary and populates any startup data or capabilities provided by the host.</p>
+</li>
+<li><p>The host selects which server will be used and provides it with the Properties collection so it can similarly announce any capabilities.</p>
+</li>
+<li><p>The host locates the application setup code and invokes it with the Properties collection.</p>
+</li>
+<li><p>The application reads and/or sets configuration in the Properties collection, constructs the desired request processing pipeline, and returns the resulting application delegate.</p>
+</li>
+<li><p>The host invokes the server startup code with the given application delegate and the Properties dictionary. The server finishes configuring itself, starts accepting requests, and invokes the application delegate to process those requests.</p>
+</li>
+</ol>
+<p>The Properties dictionary may be used to read or set any configuration parameters supported by the host, server, middleware, or application.</p>
+<ul>
+<li><p>The startup properties dictionary MUST be non-null, mutable and MUST contain the keys listed as required in the table below.</p>
+</li>
+<li><p>Keys MUST be compared using Ordinal.</p>
+</li>
+<li><p>The values associated with the keys MUST be non-null, unless otherwise specified.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Required</th>
+<th>IOPA Key Name</th>
+<th>Recommended Aliases</th>
+<th>Value Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Yes</td>
+<td>“iopa.Version”</td>
+<td>this.iopa.version</td>
+<td>The string <code>&quot;1.2&quot;</code> indicating IOPA version. Added by the server in step 2 above. See <a href="#7-versioning">Versioning</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>In addition to these keys the host, server, middleware, application, etc. may add arbitrary data associated with the application configuration to the properties dictionary. Guidelines for additional keys and a list of commonly defined keys can be found in <a href="./CommonKeys.md">CommonKeys.html</a>.</p>
+<h2 id="5-URI-Reconstruction" class="article-heading"><a href="#5-URI-Reconstruction" class="headerlink" title="5. URI Reconstruction"></a>5. URI Reconstruction<a class="article-anchor" href="#5-URI-Reconstruction" aria-hidden="true"></a></h2><p>Applications often require the ability to reconstruct the complete URI of a request. This process cannot be perfect since HTTP clients do not usually transmit the complete URI which they are requesting, but IOPA makes provisions for the purpose of reconstructing the approximate URI of a request.</p>
+<h3 id="5-1-URI-Scheme" class="article-heading"><a href="#5-1-URI-Scheme" class="headerlink" title="5.1. URI Scheme"></a>5.1. URI Scheme<a class="article-anchor" href="#5-1-URI-Scheme" aria-hidden="true"></a></h3><p>This information is usually not transmitted by an HTTP client and depending on network configuration it may not be possible for an IOPA server to determine a correct value. In these cases, the server may have to manually configure or compute a value.</p>
+<p>Servers MUST provide a best-guess value for <code>iopa.RequestScheme</code>.</p>
+<h3 id="5-2-Hostname" class="article-heading"><a href="#5-2-Hostname" class="headerlink" title="5.2. Hostname"></a>5.2. Hostname<a class="article-anchor" href="#5-2-Hostname" aria-hidden="true"></a></h3><p>In the context of an HTTP/1.1 request, the name of the server to which the client is making a request is usually indicated in the Host header field-value of the request, although it might be specified using an absolute Request-URI (see RFC 2616, sections <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html#sec5.1.2" target="_blank" rel="external">5.1.2</a>, <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.6.1.1" target="_blank" rel="external">19.6.1.1</a>).</p>
+<p>In the context of an COAP request or MQTT request, the name of the server is usually given on startup.</p>
+<p>A server MUST provide a value for the <code>&quot;Host&quot;</code> key in the request header dictionary. The format of the value MUST be “[:]”. The value SHOULD be deduced by the host using the following steps:</p>
+<ol>
+<li>If the Request-URI of the incoming request is an absolute URI, the value of the <code>&quot;Host&quot;</code> key MUST be taken from the host part of the absolute URI.</li>
+<li>If the Request-URI of the incoming request is not an absolute URI, the value of the <code>&quot;Host&quot;</code> key MUST be taken from the Host header field-value of the incoming request.</li>
+<li>If the Host header is not present in the incoming request (as in an HTTP/1.0 request), or if its value consists entirely of linear whitespace, the server MUST provide a sensible best-guess value for the <code>&quot;Host&quot;</code> key.</li>
+</ol>
+<h3 id="5-3-Paths" class="article-heading"><a href="#5-3-Paths" class="headerlink" title="5.3. Paths"></a>5.3. Paths<a class="article-anchor" href="#5-3-Paths" aria-hidden="true"></a></h3><p>Servers may have the ability to map application delegates to some base path. For example, a server might have an application delegate configured to respond to requests beginning with <code>&quot;/my-app&quot;</code>, in which case it should set the value of <code>iopa.RequestPathBase</code> in the environment dictionary to <code>&quot;/my-app&quot;</code>. If this server receives a request for <code>&quot;/my-app/foo&quot;</code>, the “<code>iopa.RequestPath</code> value of the environment dictionary provided to the application configured to respond at <code>&quot;/my-app&quot;</code> should be <code>&quot;/foo&quot;</code>.</p>
+<ul>
+<li><p>The value associated with the environment key <code>iopa.RequestPathBase</code> MUST NOT end with a slash and MUST either start with a slash or be <code>&quot;&quot;</code>.</p>
+</li>
+<li><p>The value associated with the environment key <code>iopa.RequestPath</code> MUST start with a slash, or MAY be <code>&quot;&quot;</code> if the value associated with <code>iopa.Request.PathBase</code> is not string.empty.</p>
+</li>
+</ul>
+<h3 id="5-4-URI-Reconstruction-Algorithm" class="article-heading"><a href="#5-4-URI-Reconstruction-Algorithm" class="headerlink" title="5.4. URI Reconstruction Algorithm"></a>5.4. URI Reconstruction Algorithm<a class="article-anchor" href="#5-4-URI-Reconstruction-Algorithm" aria-hidden="true"></a></h3><p>The following algorithm can be used to approximate the complete URI of the current request:</p>
+<p>####<code>C#</code></p>
+<pre><code>var uri =
+  (string)Environment[&quot;iopa.RequestScheme&quot;] + 
+   &quot;&quot;://&quot; +
+   Headers[&quot;Host&quot;].First() +
+  (string)Environment[&quot;iopa.RequestPathBase&quot;] +
+  (string)Environment[&quot;iopa.RequestPath&quot;];
+
+if (Environment[&quot;iopa.RequestQueryString&quot;] != &quot;&quot;)
+  uri += &quot;?&quot; + (string)Environment[&quot;iopa.RequestQueryString&quot;];
+</code></pre><p>The result of this algorithm may not be identical to the URI the client used to make the request; for example, the server may have done some rewriting to canonicalize the request. Further, it is subject to the caveats described in the <a href="#51-uri-scheme">URI Scheme</a> and <a href="#52-hostname">Hostname</a> sections above.</p>
+<h3 id="5-5-Percent-encoding" class="article-heading"><a href="#5-5-Percent-encoding" class="headerlink" title="5.5. Percent-encoding"></a>5.5. Percent-encoding<a class="article-anchor" href="#5-5-Percent-encoding" aria-hidden="true"></a></h3><p>A URI uses percent encoding to transport characters outside its normally allowed character rules (<a href="http://www.ietf.org/rfc/rfc3986.txt" target="_blank" rel="external">RFC 3986</a> section 2). Percent-encoding is used to express the underlying octets present in a URI component, whose octets are interpreted via UTF-8 encoding. Most web server implementations will perform percent-decoding on paths in order to perform request routing (as they rightly may, see: RFC 2616 section <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html#sec5.1.2" target="_blank" rel="external">5.1.2</a>, also <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2.3" target="_blank" rel="external">3.2.3</a>), and IOPA follows this precedent. The request query string in IOPA is presented in its percent-encoded form; a percent-decoded query string could contain <code>&#39;?&#39;</code> or <code>&#39;=&#39;</code> characters, which would render the string unparseable.</p>
+<ul>
+<li>The server MUST provide percent-decoded values for <code>iopa.Request.Path</code> and <code>iopa.Request.PathBase</code>.</li>
+<li>The server MUST provide a percent-encoded value for <code>iopa.Request.QueryString</code></li>
+</ul>
+<h2 id="6-Error-Handling" class="article-heading"><a href="#6-Error-Handling" class="headerlink" title="6. Error Handling"></a>6. Error Handling<a class="article-anchor" href="#6-Error-Handling" aria-hidden="true"></a></h2><p>While there are standard exceptions such as ArgumentException and IOException that may be expected in normal request processing scenarios, handling only such exceptions is insufficient when building a robust server or application. If a server wishes to be robust it SHOULD consistently address all exception types thrown or returned from the application delegate or body delegate. The handling mechanism (e.g. logging, crashing and restarting, swallowing, etc.) is up to the server and host process.</p>
+<h3 id="6-1-Application-Errors" class="article-heading"><a href="#6-1-Application-Errors" class="headerlink" title="6.1. Application Errors"></a>6.1. Application Errors<a class="article-anchor" href="#6-1-Application-Errors" aria-hidden="true"></a></h3><p>An application may generate an exception in the following places:</p>
+<ul>
+<li>Thrown from an invocation of the application delegate.</li>
+<li>Provided as the result of the application delegate Task.</li>
+</ul>
+<p>An application SHOULD attempt to trap its own internal errors and generate an appropriate (possibly 500-level) response rather than propagating an exception up to the server.</p>
+<p>After an application provides a response, the server SHOULD wait to receive at least one write from the response Stream before writing the response headers to the underlying transport. In this way, if instead of a write to the Stream the server gets an exception from the application delegate Task, the server will still be able to generate a 500-level response. If the server gets a write to the Stream first, it can safely assume that the application has caught as many of its internal errors as possible; the server can begin sending the response. If an exception is subsequently received, the server MAY handle it as it sees fit (e.g. logging, write a textual description of the error to the underlying transport, and/or close the connection).</p>
+<h3 id="6-2-Server-Errors" class="article-heading"><a href="#6-2-Server-Errors" class="headerlink" title="6.2. Server Errors"></a>6.2. Server Errors<a class="article-anchor" href="#6-2-Server-Errors" aria-hidden="true"></a></h3><p>When a server encounters errors during a request’s lifetime it SHOULD signal the CancellationToken it provided in <code>iopa.CallCancelled</code>. The server MAY then take any necessary actions to terminate the request, but it SHOULD be tolerant of completion delays of the application delegate.</p>
+<h2 id="7-Versioning" class="article-heading"><a href="#7-Versioning" class="headerlink" title="7. Versioning"></a>7. Versioning<a class="article-anchor" href="#7-Versioning" aria-hidden="true"></a></h2><p>Future updates to this standard may contain breaking changes (e.g. signature changes, key additions or modifications, etc.) or non-breaking additions. While addressing specific changes is the responsibility of later versions of the standard, here are initial guidelines for expected changes:</p>
+<ul>
+<li><p>This standard uses Semantic Versioning as described at  (e.g. Major.Minor.Patch).</p>
+</li>
+<li><p>Breaking changes to the API signatures or existing keys will require incrementing the major version number (e.g. IOPA 2.0)</p>
+</li>
+<li><p>Adding new keys or delegates in a backwards compatible way only requires incrementing the minor version number (e.g. IOPA 1.1).</p>
+</li>
+<li><p>Making corrections and clarifications to the document alone only requires incrementing the patch version number and last modified date (e.g. IOPA 1.0.1).</p>
+</li>
+<li><p>The <code>&quot;iopa.Version&quot;</code> key in the startup Properties and request Environment dictionaries indicates the latest version of the standard implemented by the server and may be used to dynamically adjust behaviors of applications.  Major and Minor versions are kept consistent on IOPA as far as practical.</p>
+</li>
+<li><p>All implementers SHOULD clearly document the full version number(s) of the IOPA standard they support.</p>
+</li>
+<li><p>The keys listed in <a href="./CommonKeys.md">CommonKeys</a> are strictly optional. Additions may be made there without directly affecting the IOPA standard or version number.</p>
+</li>
+</ul>
+<h2 id="8-Extensions" class="article-heading"><a href="#8-Extensions" class="headerlink" title="8. Extensions"></a>8. Extensions<a class="article-anchor" href="#8-Extensions" aria-hidden="true"></a></h2><table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./CommonKeys.md">Common Keys</a></td>
+<td>Guidelines for exending IOPA via extension keys in the various IDictionaries.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/iopa/iopa/blob/master/README.md#middlewareapplication-pipeline-builder-appbuilder" target="_blank" rel="external">AppBuilder</a></td>
+<td>AppBuilder (implementation)</td>
+</tr>
+<tr>
+<td><a href="./Opaque.md">Opaque</a></td>
+<td>IOPA Opaque Stream Extension.</td>
+</tr>
+<tr>
+<td><a href="./Websocket.md">WebSocket</a></td>
+<td>IOPA WebSocket Extension.</td>
+</tr>
+<tr>
+<td><a href="./PubSub.md">PubSub</a></td>
+<td>IOPA PubSub Extension.</td>
+</tr>
+<tr>
+<td><a href="./nodekit.md">nodekit</a></td>
+<td>Extensions to support the nodekit.io project</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-Real-World-Usage" class="article-heading"><a href="#9-Real-World-Usage" class="headerlink" title="9. Real World Usage"></a>9. Real World Usage<a class="article-anchor" href="#9-Real-World-Usage" aria-hidden="true"></a></h2><table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/iopa-docs/iopa-spec/blob/master/README.md" target="_blank" rel="external">AppBuilder</a></td>
+<td>Real word usage of AppBuilder Pipeline</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-07-07T03:42:59.000Z" itemprop="dateModified">Last updated: 2016-07-07</time>
+                <a href="appbuilder.html" class="article-footer-next" title="AppBuilder"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'iopa';
+  var disqus_url = 'https://iopa.io/specs/iopa.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IOPA-Core-Specification-1-4"><span class="toc-text">IOPA Core Specification 1.4</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Contents"><span class="toc-text">Contents</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Overview"><span class="toc-text">1. Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Definitions"><span class="toc-text">2. Definitions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Request-Execution"><span class="toc-text">3. Request Execution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Application-Delegate"><span class="toc-text">3.1. Application Delegate</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Node-js-AppFunc-returns-a-Promise-A"><span class="toc-text">Node.js AppFunc (returns a Promise/A)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NET"><span class="toc-text">.NET</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Environment"><span class="toc-text">3.2. Environment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1-Request-Data"><span class="toc-text">3.2.1 Request Data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2-Response-Data"><span class="toc-text">3.2.2 Response Data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-3-Other-Data"><span class="toc-text">3.2.3 Other Data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-4-Common-Keys"><span class="toc-text">3.2.4 Common Keys</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-Headers"><span class="toc-text">3.3. Headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-Request-body-100-Continue-and-Completed-Semantics"><span class="toc-text">3.4. Request body, 100 Continue, and Completed Semantics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-Response-Body"><span class="toc-text">3.5. Response Body</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-Request-lifetime"><span class="toc-text">3.6. Request lifetime</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Application-Startup"><span class="toc-text">4. Application Startup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-URI-Reconstruction"><span class="toc-text">5. URI Reconstruction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-URI-Scheme"><span class="toc-text">5.1. URI Scheme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Hostname"><span class="toc-text">5.2. Hostname</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-Paths"><span class="toc-text">5.3. Paths</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-URI-Reconstruction-Algorithm"><span class="toc-text">5.4. URI Reconstruction Algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-Percent-encoding"><span class="toc-text">5.5. Percent-encoding</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Error-Handling"><span class="toc-text">6. Error Handling</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-Application-Errors"><span class="toc-text">6.1. Application Errors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-Server-Errors"><span class="toc-text">6.2. Server Errors</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Versioning"><span class="toc-text">7. Versioning</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-Extensions"><span class="toc-text">8. Extensions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Real-World-Usage"><span class="toc-text">9. Real World Usage</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Specifications</strong><a href="iopa.html" class="sidebar-link current">IOPA 1.4</a><a href="appbuilder.html" class="sidebar-link">AppBuilder</a><a href="commonkeys.html" class="sidebar-link">Common Keys</a><a href="rest.html" class="sidebar-link">REST Keys</a><strong class="sidebar-title">Extensions</strong><a href="opaque.html" class="sidebar-link">Opaque Streams</a><a href="websocket.html" class="sidebar-link">WebSocket</a><strong class="sidebar-title">Third Party</strong><a href="nodekit.html" class="sidebar-link">NodeKit</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2016 <a href="https://iopa.io/" target="_blank">Internet of Protocols Alliance</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/iopa_io" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/iopa-io/iopa" class="footer-link" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs/" class="mobile-nav-link">Documentation</a><a href="/components/" class="mobile-nav-link">Components</a><a href="/news/" class="mobile-nav-link">News</a><a href="/middleware/" class="mobile-nav-link">Middleware</a><a href="/specs/" class="mobile-nav-link">Specifications</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/iopa-io/iopa" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Specifications</strong><a href="iopa.html" class="mobile-nav-link current">IOPA 1.4</a><a href="appbuilder.html" class="mobile-nav-link">AppBuilder</a><a href="commonkeys.html" class="mobile-nav-link">Common Keys</a><a href="rest.html" class="mobile-nav-link">REST Keys</a><strong class="mobile-nav-title">Extensions</strong><a href="opaque.html" class="mobile-nav-link">Opaque Streams</a><a href="websocket.html" class="mobile-nav-link">WebSocket</a><strong class="mobile-nav-title">Third Party</strong><a href="nodekit.html" class="mobile-nav-link">NodeKit</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'aad27aa416b2ef8f02bf530f23234e2f',
+  indexName: 'iopa',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>

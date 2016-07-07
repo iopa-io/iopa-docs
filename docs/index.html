@@ -2,15 +2,15 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>IOPA</title>
+  <title>Getting Started with IOPA | IOPA</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://iopa.io/index.html">
+  <link rel="canonical" href="https://iopa.io/docs/index.html">
   <!-- Alternative links -->
   
     
-      <link rel="alternative" hreflang="en" href="https://iopa.io/index.html">
+      <link rel="alternative" hreflang="en" href="https://iopa.io/docs/index.html">
     
   
   <!-- Icon -->
@@ -38,16 +38,16 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="IOPA">
   <!-- Open Graph -->
-  <meta name="description" content="IOPA is an API-first, Internet of Things (IoT) stack, open-sourced by the Internet of Protocols Alliance">
+  <meta name="description" content="This page will help you get started with IOPA. You&apos;ll be up and running in a jiffy!">
 <meta property="og:type" content="website">
-<meta property="og:title" content="IOPA">
-<meta property="og:url" content="https://iopa.io/index.html">
+<meta property="og:title" content="Getting Started with IOPA">
+<meta property="og:url" content="https://iopa.io/docs/index.html">
 <meta property="og:site_name" content="IOPA">
-<meta property="og:description" content="IOPA is an API-first, Internet of Things (IoT) stack, open-sourced by the Internet of Protocols Alliance">
+<meta property="og:description" content="This page will help you get started with IOPA. You&apos;ll be up and running in a jiffy!">
 <meta property="og:updated_time" content="2016-07-07T03:42:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IOPA">
-<meta name="twitter:description" content="IOPA is an API-first, Internet of Things (IoT) stack, open-sourced by the Internet of Protocols Alliance">
+<meta name="twitter:title" content="Getting Started with IOPA">
+<meta name="twitter:description" content="This page will help you get started with IOPA. You&apos;ll be up and running in a jiffy!">
 <meta name="twitter:site" content="iopa_io">
 <meta property="fb:admins" content="tbd">
   <!-- Google Analytics -->
@@ -83,7 +83,7 @@
     </nav>
     <div id="lang-select-wrap">
       <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
-      <select id="lang-select" data-canonical="">
+      <select id="lang-select" data-canonical="docs/index.html">
         
           <option value="en" selected>English</option>
         
@@ -97,41 +97,65 @@
   </div>
 </header>
 
-    <header id="banner" class="wrapper">
-  <div class="inner">
-    <h2 id="banner-title">The Internet of Protocols Alliance (IOPA)</h2>
-   <div class="inner"> 
-     <p id="banner-description">Welcome to the IOPA reference specification. You'll find comprehensive guides and documentation to help you start working with IOPA as quickly as possible, as well as support if you get stuck. Let's jump right in!</p>
-   </div>
-    <div id="banner-start">
-     <a href="docs/" id="banner-get-started-link">Get started</a>
-    </div>
-    <div id="banner-share"><!-- GitHub Star -->
-<iframe src="https://ghbtns.com/github-btn.html?user=iopa-io&repo=iopa&type=star&count=true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-<!-- GitHub fork -->
-<iframe src="https://ghbtns.com/github-btn.html?user=iopa-io&repo=iopa&type=fork&count=true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-<!-- Tweet button -->
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iopa.io/" data-text="IOPA - API-first, Internet of Things (IoT) stack, by the Internet of Protocols Alliance" data-hashtags="iopa">Tweet</a>
-<!-- Twitter follow button -->
-<a href="https://twitter.com/iopa_io" class="twitter-follow-button" data-show-count="false">Follow @iopa_io</a>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Getting Started with IOPA</h1>
+                <a href="https://github.com/iopa-io/iopa-docs/edit/master/source/docs/index.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                
+                  <h5 class="article-subtitle" >This page will help you get started with IOPA. You'll be up and running in a jiffy!</h5>
+                
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Add <code>iopa</code> to your Node.js project<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install iopa --save</div></pre></td></tr></table></figure></p>
+<p>Create a simple Hello World application<br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">const</span> iopa = <span class="built_in">require</span>(<span class="string">'iopa'</span>)</div><div class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> iopa.App()</div><div class="line"></div><div class="line">app.use(<span class="function"><span class="keyword">function</span> (<span class="params">context, next</span>) </span></div><div class="line">&#123;</div><div class="line">   context.log.info(<span class="string">"HELLO WORLD"</span> + context.toString());</div><div class="line">   <span class="keyword">return</span> next()</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> demo = app.build();</div><div class="line"><span class="keyword">var</span> context = app.createContext();  <span class="comment">// typically done within an HTTP, CoAP or MQTT server</span></div><div class="line"></div><div class="line">context.using(demo);     <span class="comment">// the using automatically disposes of the context"</span></div></pre></td></tr></table></figure></p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-07-07T03:42:59.000Z" itemprop="dateModified">Last updated: 2016-07-07</time>
+                <a href="about-iopa.html" class="article-footer-next" title="About IOPA"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
 <script>
-window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
-</script></div>
-  </div>
-</header>
-<div id="content-wrap">
-  <div class="wrapper">
-    <div class="inner">
-      <ul id="intro-feature-list"><li class="intro-feature-wrap"><div class="intro-feature"><div class="intro-feature-icon"><i class="fa fa-bolt"></i></div><h3 class="intro-feature-title">Lightweight</h3><p class="intro-feature-desc">As slim as you want, IOPA is a reference pattern that can run with no IOPA code at all</p></div></li><li class="intro-feature-wrap"><div class="intro-feature"><div class="intro-feature-icon"><i class="fa fa-pencil"></i></div><h3 class="intro-feature-title">Open Source</h3><p class="intro-feature-desc">Always free and open-source, include IOPA in commercial and non-commercial projects alike</p></div></li><li class="intro-feature-wrap"><div class="intro-feature"><div class="intro-feature-icon"><i class="fa fa-cloud-upload"></i></div><h3 class="intro-feature-title">Serverless</h3><p class="intro-feature-desc">The IOPA specs allow applications to be developed independently of the actual platform on which it runs and is particularly well-suited for serverless environments</p></div></li><li class="intro-feature-wrap"><div class="intro-feature"><div class="intro-feature-icon"><i class="fa fa-cog"></i></div><h3 class="intro-feature-title">Bot Ready</h3><p class="intro-feature-desc">The pattern and reference implementation is particularly well-suited for Bot APIs such as Facebook Messenger, Amazon Alexa Skills, Microsoft Bot Framework, Google Now, and Whatsapp. </p></div></li></ul>
-      <ul id="intro-cmd-wrap">
-        <li class="intro-cmd-item">npm install iopa --save</li>
-      </ul>
-      <div id="intro-get-started-wrap">
-        <a href="docs/" id="intro-get-started-link">Documentation</a>
-      </div>
+  var disqus_shortname = 'iopa';
+  var disqus_url = 'https://iopa.io/docs/index.html';
+  var disqus_title = "Getting Started with IOPA";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Getting Started</strong><a href="index.html" class="sidebar-link current">Getting Started with IOPA</a><a href="about-iopa.html" class="sidebar-link">About IOPA</a><a href="motivation.html" class="sidebar-link">Motivation</a><a href="related-concepts.html" class="sidebar-link">Related Concepts</a><strong class="sidebar-title">Miscellaneous</strong><a href="free-and-open-source.html" class="sidebar-link">Free and Open Source</a><a href="target-audience.html" class="sidebar-link">Tareget Audience</a></div>
+</aside>
     </div>
   </div>
 </div>
+
     <footer id="footer" class="wrapper">
   <div class="inner">
     <div id="footer-copyright">
@@ -156,10 +180,12 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
       </li>
     </ul>
     
+      <strong class="mobile-nav-title">Getting Started</strong><a href="index.html" class="mobile-nav-link current">Getting Started with IOPA</a><a href="about-iopa.html" class="mobile-nav-link">About IOPA</a><a href="motivation.html" class="mobile-nav-link">Motivation</a><a href="related-concepts.html" class="mobile-nav-link">Related Concepts</a><strong class="mobile-nav-title">Miscellaneous</strong><a href="free-and-open-source.html" class="mobile-nav-link">Free and Open Source</a><a href="target-audience.html" class="mobile-nav-link">Tareget Audience</a>
+    
   </div>
   <div id="mobile-lang-select-wrap">
     <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
-    <select id="mobile-lang-select" data-canonical="">
+    <select id="mobile-lang-select" data-canonical="docs/index.html">
       
         <option value="en" selected>English</option>
       

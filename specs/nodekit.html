@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>IOPA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://iopa.io/specs/nodekit.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://iopa.io/specs/nodekit.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/iopa-blue-7615250ef9.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="IOPA">
+  <!-- Open Graph -->
+  <meta name="description" content="IOPA Extension Specification: NodeKit
+Author : NodeKit Contributors 
+Copyright : 2015 Domabo. All Rights Reserved
+License : Creative Commons Attribution ShareAlike 4.0 International
+Version : 1.4
+
+Co">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IOPA">
+<meta property="og:url" content="https://iopa.io/specs/nodekit.html">
+<meta property="og:site_name" content="IOPA">
+<meta property="og:description" content="IOPA Extension Specification: NodeKit
+Author : NodeKit Contributors 
+Copyright : 2015 Domabo. All Rights Reserved
+License : Creative Commons Attribution ShareAlike 4.0 International
+Version : 1.4
+
+Co">
+<meta property="og:image" content="https://iopa.io/./iopa.png">
+<meta property="og:updated_time" content="2016-07-07T03:42:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IOPA">
+<meta name="twitter:description" content="IOPA Extension Specification: NodeKit
+Author : NodeKit Contributors 
+Copyright : 2015 Domabo. All Rights Reserved
+License : Creative Commons Attribution ShareAlike 4.0 International
+Version : 1.4
+
+Co">
+<meta name="twitter:image" content="https://iopa.io/./iopa.png">
+<meta name="twitter:site" content="iopa_io">
+<meta property="fb:admins" content="tbd">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-TBD-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">IOPA</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs/" class="main-nav-link">Documentation</a><a href="/components/" class="main-nav-link">Components</a><a href="/news/" class="main-nav-link">News</a><a href="/middleware/" class="main-nav-link">Middleware</a><a href="/specs/" class="main-nav-link">Specifications</a>
+      <a href="https://github.com/iopa-io/iopa" class="main-nav-link"><i class="fa fa-github"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="">
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="https://github.com/iopa-io/iopa-docs/edit/master/source/specs/nodekit.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p><a href="http://iopa.io"><img src="./iopa.png" alt="IOPA"></a></p>
+<h1 id="IOPA-Extension-Specification-NodeKit" class="article-heading"><a href="#IOPA-Extension-Specification-NodeKit" class="headerlink" title="IOPA Extension Specification: NodeKit"></a>IOPA Extension Specification: NodeKit<a class="article-anchor" href="#IOPA-Extension-Specification-NodeKit" aria-hidden="true"></a></h1><ul>
+<li>Author : NodeKit Contributors </li>
+<li>Copyright : 2015 Domabo. All Rights Reserved</li>
+<li>License : <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="external">Creative Commons Attribution ShareAlike 4.0 International</a></li>
+<li>Version : 1.4</li>
+</ul>
+<h2 id="Contents" class="article-heading"><a href="#Contents" class="headerlink" title="Contents"></a>Contents<a class="article-anchor" href="#Contents" aria-hidden="true"></a></h2><ol>
+<li><p><a href="#1-overview">Overview</a></p>
+</li>
+<li><p><a href="#2-key-usage-guidelines">Key usage guidelines</a></p>
+</li>
+<li><p><a href="#3-naming-conventions">Naming conventions</a></p>
+</li>
+<li><p><a href="#4-value-conventions">Value conventions</a></p>
+</li>
+<li><p><a href="#5-capabilities-announcement-and-detection">Capabilities announcement and detection</a></p>
+</li>
+<li><p><a href="#6-nodekit-keys">nodeAppKit keys</a></p>
+</li>
+</ol>
+<h2 id="1-Overview" class="article-heading"><a href="#1-Overview" class="headerlink" title="1. Overview"></a>1. Overview<a class="article-anchor" href="#1-Overview" aria-hidden="true"></a></h2><p>This document contains additional keys used by the nodekit.io reference application.</p>
+<h2 id="2-Key-usage-guidelines" class="article-heading"><a href="#2-Key-usage-guidelines" class="headerlink" title="2. Key usage guidelines"></a>2. Key usage guidelines<a class="article-anchor" href="#2-Key-usage-guidelines" aria-hidden="true"></a></h2><p>The Dictionary object can be used to extend the IOPA interface with additional functionality.</p>
+<ul>
+<li><p>All keys MUST be compared using Ordinal.</p>
+</li>
+<li><p>All keys not defined in the IOPA standard are considered extension keys and are strictly optional.</p>
+</li>
+<li><p>Implementers SHOULD clearly document what keys their component will populate, under what conditions, and the types and semantics of the associated values.</p>
+</li>
+</ul>
+<h2 id="3-Naming-conventions" class="article-heading"><a href="#3-Naming-conventions" class="headerlink" title="3. Naming conventions"></a>3. Naming conventions<a class="article-anchor" href="#3-Naming-conventions" aria-hidden="true"></a></h2><p>The Dictionary objects are open and mutable for storing arbitrary data. To avoid collisions between components, the following key naming conventions SHOULD be honored.</p>
+<ul>
+<li>Key names are Ordinal (case sensitive, culture insensitive) strings.</li>
+</ul>
+<h2 id="4-Value-conventions" class="article-heading"><a href="#4-Value-conventions" class="headerlink" title="4. Value conventions"></a>4. Value conventions<a class="article-anchor" href="#4-Value-conventions" aria-hidden="true"></a></h2><p>The type of each value SHOULD be clearly documented by the implementer.</p>
+<ul>
+<li><p>Values MAY be of a type derived from the type specified in documentation, but the documentation SHOULD state under what conditions it is reasonable to expect such types to be available. Consumers may attempt to cast to more specific derived types (safely using is or as rather than an explicit cast), but SHOULD fall back to the documented base type wherever possible.</p>
+</li>
+<li><p>Null values or empty strings SHOULD be treated the same as if the key were not present. Every key SHOULD have at least one defined value, even if the value is the string “true”.</p>
+</li>
+<li><p>Implementers SHOULD avoid populating keys associated with null values or empty strings, but SHOULD be tolerant of such values when retrieving data.</p>
+</li>
+<li><p>Implementers MUST NOT overload a single key with multiple types (other than derived types as discussed above). If there are multiple possible representations, use separate keys to clearly identify them.</p>
+</li>
+<li><p>Avoid using types that are likely to change signatures between versions.</p>
+</li>
+<li><p>Prefer base types (e.g. int, string, etc.) or common types in the .NET framework that have existed for multiple releases (e.g. Stream).</p>
+</li>
+<li><p>Values in the request Environment collection are assumed to be alive and accurate only for the lifetime of the request. Consumers SHOULD NOT retain or attempt to use values after a request has completed or failed. Where a value advertises a specific capability, that capability is only assumed to be available for that request instance and SHOULD be re-verified on future requests.</p>
+</li>
+<li><p>Global capabilities or data SHOULD be communicated as described in section 5 below.</p>
+</li>
+</ul>
+<p>Where any specific value cleanup is required (e.g. Dispose), such cleanup is the responsibility of the component that originally added the value. This should be taken care of as the stack unwinds after a request has completed or failed.</p>
+<h2 id="5-Capabilities-announcement-and-detection" class="article-heading"><a href="#5-Capabilities-announcement-and-detection" class="headerlink" title="5. Capabilities announcement and detection"></a>5. Capabilities announcement and detection<a class="article-anchor" href="#5-Capabilities-announcement-and-detection" aria-hidden="true"></a></h2><p>It is important for applications to be able to determine if a specific feature is supported by the current server or middleware. The following pattern is recommended for announcing and detecting feature/extension support.</p>
+<ul>
+<li><p>At startup the server SHOULD create a <code>server.Capabilities</code> object dictionary in the startup Properties dictionary.</p>
+</li>
+<li><p>This capabilities dictionary is for static capability details that do not change on a per-request basis.</p>
+</li>
+<li><p>The same instance of the capabilities dictionary SHOULD also be included in each request environment dictionary.</p>
+</li>
+<li><p>Each extension SHOULD add to the capabilities Dictionary a <code>nodeAppKit.Version</code> key with the associated string value of the latest version of that extension supported (e.g. 1.2).</p>
+</li>
+<li><p>If extensions have defined additional keys used to indicate details, the implementer SHOULD add to the capabilities Dicitonary a <code>nodeAppKit.Support</code> Dictionary containing the detailed <code>nodeAppKit.FeatureDetail</code> keys and their associated values.</p>
+</li>
+<li><p>Per-request feature keys and values should be included directly in the environment dictionary.</p>
+</li>
+</ul>
+<h2 id="6-nodekit-keys" class="article-heading"><a href="#6-nodekit-keys" class="headerlink" title="6. nodekit keys"></a>6. nodekit keys<a class="article-anchor" href="#6-nodekit-keys" aria-hidden="true"></a></h2><p>Keys and values listed here are those that are anticipated to be common across multiple implementations, but are not strictly required for basic operations.</p>
+<table>
+<thead>
+<tr>
+<th>Object Name</th>
+<th style="text-align:right">Type</th>
+<th style="text-align:center">Startup</th>
+<th style="text-align:center">Request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>io.nodekit.Version</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td>“1.0”</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-07-07T03:42:59.000Z" itemprop="dateModified">Last updated: 2016-07-07</time>
+                <a href="websocket.html" class="article-footer-prev" title="WebSocket"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'iopa';
+  var disqus_url = 'https://iopa.io/specs/nodekit.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IOPA-Extension-Specification-NodeKit"><span class="toc-text">IOPA Extension Specification: NodeKit</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Contents"><span class="toc-text">Contents</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Overview"><span class="toc-text">1. Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Key-usage-guidelines"><span class="toc-text">2. Key usage guidelines</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Naming-conventions"><span class="toc-text">3. Naming conventions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Value-conventions"><span class="toc-text">4. Value conventions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Capabilities-announcement-and-detection"><span class="toc-text">5. Capabilities announcement and detection</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-nodekit-keys"><span class="toc-text">6. nodekit keys</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Specifications</strong><a href="iopa.html" class="sidebar-link">IOPA 1.4</a><a href="appbuilder.html" class="sidebar-link">AppBuilder</a><a href="commonkeys.html" class="sidebar-link">Common Keys</a><a href="rest.html" class="sidebar-link">REST Keys</a><strong class="sidebar-title">Extensions</strong><a href="opaque.html" class="sidebar-link">Opaque Streams</a><a href="websocket.html" class="sidebar-link">WebSocket</a><strong class="sidebar-title">Third Party</strong><a href="nodekit.html" class="sidebar-link current">NodeKit</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2016 <a href="https://iopa.io/" target="_blank">Internet of Protocols Alliance</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/iopa_io" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/iopa-io/iopa" class="footer-link" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs/" class="mobile-nav-link">Documentation</a><a href="/components/" class="mobile-nav-link">Components</a><a href="/news/" class="mobile-nav-link">News</a><a href="/middleware/" class="mobile-nav-link">Middleware</a><a href="/specs/" class="mobile-nav-link">Specifications</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/iopa-io/iopa" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Specifications</strong><a href="iopa.html" class="mobile-nav-link">IOPA 1.4</a><a href="appbuilder.html" class="mobile-nav-link">AppBuilder</a><a href="commonkeys.html" class="mobile-nav-link">Common Keys</a><a href="rest.html" class="mobile-nav-link">REST Keys</a><strong class="mobile-nav-title">Extensions</strong><a href="opaque.html" class="mobile-nav-link">Opaque Streams</a><a href="websocket.html" class="mobile-nav-link">WebSocket</a><strong class="mobile-nav-title">Third Party</strong><a href="nodekit.html" class="mobile-nav-link current">NodeKit</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'aad27aa416b2ef8f02bf530f23234e2f',
+  indexName: 'iopa',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>
